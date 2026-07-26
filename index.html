@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>بسملة — Basmala</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    font: 16px/1.9 -apple-system, "SF Arabic", "Segoe UI", system-ui, sans-serif;
+    background: linear-gradient(180deg, #030b1f 0%, #17254c 100%);
+    background-attachment: fixed;
+    color: #e9f0ff;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+  header { text-align: center; margin-bottom: 56px; }
+  h1 { font-size: 44px; margin: 0 0 6px; letter-spacing: -0.5px; }
+  .sub { color: #4ae0a7; font-size: 17px; margin: 0; }
+  .en { color: #8ea3c9; font-size: 14px; margin-top: 4px; }
+  section {
+    background: rgba(255,255,255,0.045);
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 18px; padding: 24px 26px; margin-bottom: 20px;
+  }
+  h2 { font-size: 21px; margin: 0 0 12px; color: #fff; }
+  h3 { font-size: 16px; margin: 22px 0 6px; color: #4ae0a7; }
+  p, li { color: #c3d0e8; margin: 0 0 10px; }
+  ul { padding-inline-start: 22px; margin: 0 0 10px; }
+  a { color: #4ae0a7; }
+  .ltr { direction: ltr; text-align: left; }
+  footer { text-align: center; color: #7f92b5; font-size: 13px; margin-top: 40px; }
+  code { background: rgba(255,255,255,0.08); padding: 1px 6px; border-radius: 5px; font-size: 13px; }
+</style>
+<div class="wrap">
+  <header>
+    <h1>بسملة</h1>
+    <p class="sub">مواقيت الصلاة والقرآن والأذكار</p>
+    <p class="en">Basmala for iPhone &amp; Apple Watch</p>
+  </header>
+
+  <section id="support">
+    <h2>الدعم</h2>
+    <p>لأي سؤال أو ملاحظة أو بلاغ عن خلل، راسلني مباشرةً:</p>
+    <p><a href="mailto:mjeed8433@gmail.com">mjeed8433@gmail.com</a></p>
+    <p>أجيب عادةً خلال يومين. إن كان البلاغ عن خلل، اذكر طراز جهازك وإصدار iOS وما الذي كنت تفعله حين وقع.</p>
+
+    <h3>أسئلة متكرّرة</h3>
+    <ul>
+      <li><strong>مواقيتي تخالف مسجدي بدقائق.</strong> غيّر طريقة الحساب من «الإعدادات ← طريقة الحساب»، أو اضبط كل وقت يدويًّا بالدقائق من «تعديل المواقيت».</li>
+      <li><strong>لا تصلني تنبيهات الأذان.</strong> تأكّد من السماح بالتنبيهات في إعدادات النظام، وأن مفتاح التنبيهات مرفوع داخل التطبيق.</li>
+      <li><strong>لا تظهر تعقيبات الساعة.</strong> افتح تطبيق Watch في الآيفون وثبّت «بسملة» على ساعتك، ثم أضف التعقيب من وجه الساعة (لمسة مطوّلة ← تحرير ← التعقيبات).</li>
+      <li><strong>هل يعمل دون إنترنت؟</strong> نعم. المصحف والتلاوة والأذكار والمواقيت كلّها داخل التطبيق ولا تحتاج اتصالًا.</li>
+    </ul>
+  </section>
+
+  <section id="privacy">
+    <h2>سياسة الخصوصية</h2>
+    <p><strong>لا يجمع تطبيق «بسملة» أي بيانات عنك. لا حساب، ولا إعلانات، ولا تتبّع، ولا تحليلات، ولا أدوات طرفٍ ثالث.</strong></p>
+
+    <h3>ما يبقى على جهازك</h3>
+    <ul>
+      <li>موقعك، ومواقيت صلاتك، وإعدادات الحساب.</li>
+      <li>موضع قراءتك في المصحف، وعلاماتك، وخطّة ختمتك.</li>
+      <li>سجلّ صلواتك وأعمال يومك.</li>
+    </ul>
+    <p>كل ذلك مخزَّن في جهازك وحده. لا خادم لنا نرسل إليه شيئًا، ولا نملك وسيلةً للاطّلاع عليه.</p>
+
+    <h3>الموقع</h3>
+    <p>يُطلب موقعك لغرضٍ واحد: حساب مواقيت الصلاة واتجاه القبلة. والحساب يجري كلّه على جهازك (بمكتبة <code>adhan-swift</code> فلكيًّا) ولا يمرّ بأي شبكة. ونطلبه بدقّةٍ مخفَّضة — مستوى المدينة يكفي.</p>
+    <p><strong>الاستثناء الوحيد، ونصرّح به:</strong> لعرض اسم مدينتك في الواجهة، تُمرَّر إحداثياتك إلى خدمة الترميز الجغرافي من Apple (<code>CLGeocoder</code>) لاستخراج الاسم. هذا نداءٌ للعرض فقط، خارج مسار حساب المواقيت، وفشله لا يؤثّر على شيء. تخضع تلك الخدمة لسياسة خصوصية Apple.</p>
+
+    <h3>ساعة أبل</h3>
+    <p>يرسل الآيفون إلى ساعتك إحداثياتك وإعدادات الحساب عبر اتصال Apple المباشر بين جهازيك (WatchConnectivity)، لتحسب الساعة مواقيتها بنفسها. لا يمرّ ذلك بأي خادم.</p>
+
+    <h3>الأطفال</h3>
+    <p>التطبيق لا يجمع بيانات من أحد، صغيرًا كان أو كبيرًا.</p>
+
+    <h3>التغييرات</h3>
+    <p>إن تغيّرت هذه السياسة يومًا، سيُحدَّث هذا الصفحة ويُذكر تاريخ التحديث أدناه.</p>
+  </section>
+
+  <section class="ltr" lang="en" dir="ltr">
+    <h2>Privacy Policy (English)</h2>
+    <p><strong>Basmala collects no data about you.</strong> There is no account, no advertising, no tracking, no analytics, and no third-party SDKs.</p>
+    <p>Your location, prayer times, calculation settings, reading position, bookmarks, khatmah plan and prayer log are stored on your device only. We operate no server and have no way to access any of it.</p>
+    <p><strong>Location.</strong> Your location is requested for one purpose: computing prayer times and the qibla direction. That computation runs entirely on your device (astronomically, via <code>adhan-swift</code>) and never touches the network. We request reduced accuracy — city level is sufficient.</p>
+    <p><strong>The one disclosed exception:</strong> to display your city name in the interface, your coordinates are passed to Apple's geocoding service (<code>CLGeocoder</code>) to resolve that name. This is a display-only call, outside the prayer-time calculation path, and its failure changes nothing. That service is governed by Apple's privacy policy.</p>
+    <p><strong>Apple Watch.</strong> Your iPhone sends your coordinates and calculation settings to your watch over Apple's direct device-to-device link (WatchConnectivity) so the watch can compute its own times. This does not pass through any server.</p>
+    <p>Support: <a href="mailto:mjeed8433@gmail.com">mjeed8433@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>عبدالمجيد العمري · آخر تحديث: ٢٦ يوليو ٢٠٢٦</p>
+  </footer>
+</div>
+</html>
